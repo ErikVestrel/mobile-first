@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+}
+root{
+    --h1-mobile: 24px;
+    --lh1-mobile: 26px;
+    --h2-mobile: 14px;
+    --lh2-mobile: 18px;
+    --h1-tablet: 40px;
+    --lh1-tablet: 42px;
+    --h2-tablet: 20px;
+    --lh2-tablet: 24px;
+
+    --linear-BG: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    --Bitcoin-Orange:  #f7931a ;
+    --soft-orange: #ffe9d4 ;
+    --secondary-blue:  #1a9af7     ;
+    --soft-blue:  #1a9af7  ;
+    --warm-black: #201e1c ;
+    --warm-black1: #282623;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #ffffff ;
+
+    --shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
+
+    
+}
