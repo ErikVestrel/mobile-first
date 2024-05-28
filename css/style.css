@@ -3,9 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-html{
-}
-root{
+
+:root{
     --h1-mobile: 24px;
     --lh1-mobile: 26px;
     --h2-mobile: 14px;
@@ -14,8 +13,9 @@ root{
     --lh1-tablet: 42px;
     --h2-tablet: 20px;
     --lh2-tablet: 24px;
-
-    --linear-BG: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    
+    --linear-BG:linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    ;
     --Bitcoin-Orange:  #f7931a ;
     --soft-orange: #ffe9d4 ;
     --secondary-blue:  #1a9af7     ;
@@ -25,8 +25,310 @@ root{
     --grey: #bababa;
     --off-white: #faf8f7;
     --just-white: #ffffff ;
-
-    --shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
-
     
+    --shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
+    
+    
+}
+html{
+    font-size: 6.25%;
+    font-family: "DM Sans", sans-serif;
+}
+body{
+    font-size: 16rem;;
+}
+.title, .subtitle{
+    text-align: center;
+}
+.title{
+    font: 700 var(--h1-mobile) "DM Sans";
+    line-height: var(--lh1-mobile);
+    padding-bottom: 20px;
+}
+.subtitle{
+    font: 500 var(--h2-mobile) "DM Sans";
+    line-height: var(--lh2-mobile);
+    padding-bottom: 30px;
+}
+.layout1{
+    background: var(--linear-BG);
+    padding: 30px ;
+    position: relative;
+}
+.banner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.banner-container figure{
+    display: flex;
+    
+}
+.banner-container figure img{
+    width: 40px;
+    object-fit: cover;
+    align-self: center;
+}
+.banner-container h2{
+    font-weight: 700;
+    color: var(--Bitcoin-Orange);
+    padding-left: 12px;
+}
+.layout1 .title{
+    color: var(--just-white);
+    
+}
+.layout1 .subtitle{
+    color: var(--soft-orange);
+}
+.button-route{
+    
+    position: absolute;
+    bottom: -15px;
+    left: calc(50vw - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 240px;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    background-color: var(--off-white);
+}
+.button-route a{
+    text-decoration: none;
+    color: var(--warm-black);
+    font: 700 var(--h2-mobile) 'DM Sans' ;
+}
+/* second layout */
+
+.layout2{
+    padding: 16px;
+    background-color: var(--off-white);
+}
+.banner2{
+    display: grid;
+    place-items: center;
+    margin: 40px 0;
+}
+.layout2 .subtitle{
+    color: var(--grey);
+}
+.casas-moneda{
+    width: 210px;
+    margin: 20px auto;
+}
+.coins-header{
+    color: var(--Bitcoin-Orange);
+    padding: 10px;
+}
+.casas-moneda table{
+    width: 100%;
+    border: 1px solid var(--off-white);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--just-white);
+    border-collapse: collapse;
+    color: var(--grey);
+    font-family: "Inter", sans-serif;
+}
+.casas-moneda th{
+    text-align: start;
+    border: 1px solid var(--off-white);
+    padding: 5px 10px;
+    font: 400 16rem "Inter";
+    line-height: 19px;
+}
+.casas-moneda td{
+    text-align: right;
+    border: 1px solid var(--off-white);
+    padding: 5px 10px;
+}
+.change-info{
+    margin: 10px auto 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 130px;
+    height: 30px;
+    padding: 0 8px;
+    background-color: var(--soft-orange);
+    border: none;
+    border-radius: 8px;
+    font: 400 14rem "Inter";
+}
+.change-info span{
+    font-weight: bold;
+}
+/* layout3 */
+
+.layout3{
+    background-color: var(--warm-black);
+    padding: 55px 15px 30px;
+    
+}
+.layout3 > .title{
+    color: var(--just-white);
+}
+.layout3 > .subtitle{
+    color: var(--grey);
+}
+.layout3 div{
+    background-color: var(--warm-black1);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: var(--shadow)
+}
+.h3-title{
+    font:700 var(--lh2-mobile) "DM Sans";
+    line-height: var(--lh2-mobile);
+    color: var(--off-white);
+    margin: 5px 0;
+}
+.h3-subtitle{
+    font:500 var(--h2-mobile) "DM Sans";
+    line-height: var(--lh2-mobile);
+    color: rgba(128, 128, 128, 1);
+    margin: 5px 0;
+    ;
+}
+/* layout4 */
+
+.layout4 figure{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+
+}
+.layout4 figure img{
+    object-fit: cover;
+    width: inherit ;
+}
+.layout4 figure p{
+    position: absolute;
+    color: var(--soft-orange);
+    top:  80px;
+}
+/* layout5 */
+.layout5{
+    padding: 70px 0 30px;
+    background-color: var(--off-white);
+}
+.layout5 .tittle, .subtitle{
+    padding: 0 20px;
+}
+.plans{
+    margin: 20px 0;
+    padding:  20px 0;
+    display: flex;
+    justify-content: center;
+}
+.plan-option{
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    justify-items: center;
+    width: 200px;
+    height: 250px;
+    padding: 25px;
+    margin: 0 4px;
+    border-radius: 8px;
+    background-color: var(--just-white);
+    box-shadow: var(--shadow);
+}
+.plan-option .recomendation{
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 50px);
+    display: grid;
+    place-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: var(--Bitcoin-Orange);
+    border-radius: 8px;
+}
+.plan-option .recomendation p{
+    color: var(--just-white);
+    font: 500 12px "Inter";
+}
+.plan-option h3{
+    margin-top: 10px;
+    font: 700 14px "Inter";
+}
+.plan-option .price{
+    position: relative;
+    font: 700 52px "Inter";
+    width: 80px;
+    text-align: center;
+}
+.plan-option .price span{
+    font: 500 12px "Inter";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.plan-option .comment{
+    font: 400 12px "Inter";
+    line-height: 14px;
+    width: 100%;
+    color:  rgba(117, 117, 117, 1);
+    ;
+    text-align: center;
+}
+.plan-option button{
+    align-self: self-end;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    border-radius: 4px;
+    border: 2px solid var(--Bitcoin-Orange);
+    font: 700 12px "Inter";
+}
+.qa-title{
+    padding: 16px;
+}
+.qa-container{
+padding: 20px;
+}
+.qa-container p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font: 500 var(--h2-mobile) "DM Sans";
+    line-height: var(--lh2-mobile);
+    color: rgba(117, 117, 117, 1);
+    ;
+}
+.qa-container p span{
+width: 30px;
+padding-right: 6px;
+text-align: end;
+}
+/* footer */
+.footer-container{
+    height: 120px;
+    width: 100%;
+    background-color: var(--Bitcoin-Orange);
+    display: grid;
+    padding: 0 20px;
+    place-items: center;
+    grid-template-columns: auto auto;
+}
+.container-left ul li{
+    list-style: none;
+    margin-top: 8px;
+}
+.container-left ul li a {
+    text-decoration: none;
+    color: var(--soft-orange);
+    font: 500 var(--h2-mobile) "DM Sans";
+    line-height: var(--lh2-mobile);
 }
