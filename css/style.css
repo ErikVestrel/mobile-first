@@ -194,16 +194,16 @@ header .subtitle{
     background-repeat: no-repeat;
 }
 .clock{
-    background-image: url(/assets/clock\ 1.svg);
+    background-image: url("../assets/clock\ 1.svg");
 }
 .eye{
-    background-image: url(/assets/eye\ 1.svg);
+    background-image: url("../assets/eye\ 1.svg");
 }
 .dollar{
-    background-image: url(/assets/dollar-sign\ 1.png);
+    background-image: url("../assets/dollar-sign\ 1.png");
 }
 .check{
-    background-image: url(/assets/check-circle\ 1.svg);
+    background-image: url("../assets/check-circle\ 1.svg");
 }
 .h3-title{
     font:700 18rem "DM Sans";
@@ -227,7 +227,7 @@ header .subtitle{
     display: flex;
     justify-content: center;
 
-    background-image: url('/assets/bitcoinbaby\ 1.png');
+    background-image: url(../assets/bitcoinbaby\ 1.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
